@@ -1,0 +1,32 @@
+var obj=[
+	{
+		name:"oobtc.com",
+		text:"区块链顶级域名，WBTC或O2O比特币交易平台，简单响亮易记。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=oobtc.com"
+	},
+	{
+		name:"cxcoin.com",
+		text:"区块链顶级域名，数字货币交易平台。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=cxcoin.com"
+	},
+	{
+		name:"stoii.com",
+		text:"区块链证券通证初始发行网（Security Token Offering Initiate Internet）顶级域名。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=stoii.com"
+	},
+	{
+		name:"tokendot.com",
+		text:"区块链顶级域名，TOKEN(通证、代币、令牌)，DOT(圆点、点)。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=tokendot.com"
+	},
+	{
+		name:"chainac.com",
+		text:"区块链顶级域名，CHAIN(区块链)，AC(王牌、A)。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=chainac.com"
+	},
+	{		
+		name:"51393.cn",
+		text:"5位纯数字域名，响亮好记。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=51393.cn"
+	}
+]

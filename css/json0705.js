@@ -1,0 +1,37 @@
+var obj=[
+	{
+		name:"oobtc.com",
+		text:"区块链顶级域名，WBTC或O2O比特币交易平台，简单响亮易记。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=oobtc.com"
+	},
+	{
+		name:"nftinto.com",
+		text:"区块链顶级域名，NFT非同质化资产。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=nftinto.com"
+	},
+	{
+		name:"stoii.com",
+		text:"区块链证券通证初始发行网（Security Token Offering Initiate Internet）顶级域名。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=stoii.com"
+	},
+	{
+		name:"tokendot.com",
+		text:"区块链顶级域名，TOKEN(通证、代币、令牌)，DOT(圆点、点)。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=tokendot.com"
+	},
+	{
+		name:"chainac.com",
+		text:"区块链顶级域名，CHAIN(区块链)，AC(王牌、A)。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=chainac.com"
+	},
+	{		
+		name:"metamask.luxe",
+		text:"metamask小狐狸钱包同名的区块链后缀溢价好域名。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=metamask.luxe"
+	}
+	{		
+		name:"6636.luxe",
+		text:"4位纯数字稀缺的区块链后缀域名，66大顺。阿里万网交易，即时过户。",
+		link:"https://wanwang.aliyun.com/nametrade/detail/online.html?productType=2&domainName=6636.luxe"
+	}
+]

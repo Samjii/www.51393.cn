@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>区块链域名，NFT非同质化资产</title>
+	<link rel="stylesheet" type="text/css" href='css/style.css?v=1'>
+  <style type="text/css">
+      #link{background:#fff;position: relative;z-index: 2;display:block;text-align: center;width: 100%;padding: 14px 0;outline: none;text-decoration:none;}
+  </style>
+</head>
+<body onload="changeWords('fontSize',36);">
+	<div>
+		<img id='bann'/>
+		<em id='center'>
+			<img src='images/logo.png'/>
+			<h1 class='fontSize'>区块链域名专区</h1>
+			<ul id='content'>
+			</ul>
+		</em>
+	</div>
+  <p id='foot'></p>
+  <a href="https://beian.miit.gov.cn" style="color:#1290f5;" id='link'>粤ICP备17114056号-1</a>
+</body>
+</html>
+<script src='css/json.js'></script>
+<script>
+console.log(obj)
+var changeWords=function(tex,siz){
+	var fontSize=document.querySelectorAll(".fontSize")
+      init();
+      var resizeTimer = null;
+      window.onresize = function(){
+      	if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function(){init();} , 500);
+    }
+
+    function init(){
+        if (document.body.clientWidth >= 640 )
+            main( siz );
+        else{
+            var size =document.body.clientWidth*46/640;
+            main( size );
+        }
+    }
+
+    function main( s ){
+      	if(document.body.clientWidth<=1024)
+      		document.getElementById("bann").src="images/banner1.jpg";
+      	else
+      		document.getElementById("bann").src="images/banner.jpg";
+      	for(var u=0;u<fontSize.length;u++){
+      		fontSize[u].style.fontSize=s+"px";
+      	}
+    }
+
+    var page=0;
+	var allPage=Math.round(obj.length/10);
+	var content=document.getElementById("content");
+	MoreData();
+	function MoreData(){
+		for(var i=0;i<10;i++){
+      var t=page*10+i
+      if(!obj[t]){
+        console.log(1)
+      }
+      else{
+          var li=document.createElement("li");
+          li.setAttribute("onclick", "window.location.href='"+obj[t].link+"'")
+          li.innerHTML="<span><p class='text fontSize'>"+obj[t].name+"</p><button class='btn'>我要了</button></span><span class='line'>"+obj[t].text+"</span>"
+          content.appendChild(li);
+      }
+		}		
+	}
+		
+	window.onscroll= function(){
+        var pageHeight = Math.max(document.body.scrollHeight,document.body.offsetHeight),
+		viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0,
+		scrollHeight = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        if(viewportHeight + scrollHeight >= pageHeight - 20){
+        	if(page<=allPage-1){
+        		page++;
+        		MoreData();
+        	}else{
+        		if(!document.querySelector("footer")){
+        			var footer=document.createElement("footer");
+        			footer.innerHTML="——没有更多了——";
+        			document.getElementById("foot").appendChild(footer);
+        		}
+			}
+        }  
+    }
+}		
+</script>
